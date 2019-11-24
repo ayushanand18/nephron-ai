@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NephronAI -Classify Chronic Kidney Disease</title>
+</head>
+<body>
+<form id="forms">
+Specific Gravity:<input type="text" placeholder="numeric can be decimal e.g. 1.02" id="sgt"/><br/>
+Albumin:<input type="text" placeholder="whole number e.g 1" id="alt"/><br/>
+Serum Creatinine<input type="text" placeholder="numeric can be decimal e.g 1.2 or 2" id="sct"/><br/>
+Heamoglobin:<input type="text" placeholder="can be decimal e.g 15.4" id="hemot"/><br/>
+Packed Cell Volume:<input type="text" placeholder="whole number e.g. 64" id="pcvt"/><br/>
+White Blood Cell Count:<input type="text" placeholder="whole number e.g. 7800" id="wct"/><br/>
+Red Blood Cell Count:<input type="text" placeholder="whole number e.g. 5.2" id="rct"/><br/>
+Hypertension:<input type="text" placeholder="yes or no e.g. yes" id="htnt"/><br/>
+<br/>
+</form>
+<button id="cls_btn" onclick="javascript:loadsEx()">PREDICT</button>
+
+<br/><br/>
+
+<iframe id="iframe" width=100% style="max-width:500px" height=50px src="https://ayund18.gisksk.isaso" /></iframe>
+    <script>
+
+var ifrae=document.getElementById("iframe");
+    ifrae.style.border="none";
+function loadsEx(){
+    var sgt=document.getElementById("sgt").value;
+var alt=document.getElementById("alt").value;
+var sct=document.getElementById("sct").value;
+var hemot=document.getElementById("hemot").value;
+var pcvt=document.getElementById("pcvt").value;
+var wct=document.getElementById("wct").value;
+var rct=document.getElementById("rct").value;
+var htnt=document.getElementById("htnt").value;
+
+    var newurl="https://now-express.intru-innovation.now.sh/clsazure"+"?sg="+sgt+"&al=" +alt+"&sc="+sct+"&hemo="+hemot+"&pcv="+pcvt+"&wc="+wct+"&rc="+rct+"&htn="+htnt;
+    ifrae.setAttribute("src",newurl);
+alert('In the Response, "ckd" means Chronic Kidney Disease Probability and "notckd" meand no probability for the disease');
+};
+
+
+</script>
+</body>
+</html>
