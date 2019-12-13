@@ -26,16 +26,21 @@
         .content{
             padding-left:20px !important;
         }
-        .content input[type=text]{
+        .content input[type=text], .content input[type=number]{
             border:none;
-            border-bottom: 1px solid black;
+            width:300px;
+            margin-bottom:5px;
+;           border-bottom: 1px solid black;
             padding-left:8px;
-            font-family: :'Poppins',sans-serif;
+            font-family:'Poppins',sans-serif;
             font-size:14px;
         }
-        .content p a{
+        .content a{
             text-decoration: underline;
             color:black;
+        }
+        .content .comment{
+            font-size:12px;
         }
         @media screen and (min-width:720px){
             .content{
@@ -49,18 +54,44 @@
 <body>
     <div class="content">
 <form id="forms">
-Specific Gravity:<input type="text" placeholder="numeric can be decimal e.g. 1.02" id="sgt"/><br/>
-Albumin:<input type="text" placeholder="whole number e.g 1" id="alt"/><br/>
-Serum Creatinine<input type="text" placeholder="numeric can be decimal e.g 1.2 or 2" id="sct"/><br/>
-Heamoglobin:<input type="text" placeholder="can be decimal e.g 15.4" id="hemot"/><br/>
-Packed Cell Volume:<input type="text" placeholder="whole number e.g. 64" id="pcvt"/><br/>
-White Blood Cell Count:<input type="text" placeholder="whole number e.g. 7800" id="wct"/><br/>
-Red Blood Cell Count:<input type="text" placeholder="whole number e.g. 5.2" id="rct"/><br/>
-Hypertension:<input type="text" placeholder="yes or no e.g. yes" id="htnt"/><br/>
-<br/>
+Specific Gravity:<br/>
+<span class="comment">(You need to get a medical test for this or you can skip it. it is numeric for eg. 1.02)</span>
+<br/><input type="number" placeholder="" id="sgt"/><br/>
+Albumin:
+<br/><span class="comment">(Select from this list)</span>
+<br/><select class="select" id="alt">
+    <option value=""
+>noitpo/<--Select--leS--    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+</select><br/>
+Serum Creatinine:<br/>
+<span class="comment">(The Serum creatinine in mg/dl for eg. 1.2)</span>
+<br/><input type="number" placeholder="" id="sct"/><br/>
+Heamoglobin:<br/>
+<span class="comment">(The pigment that gives blood its red color, in grams. for eg. 15.2)</span>
+<br/><input type="text" placeholder="" id="hemot"/><br/>
+Packed Cell Volume:<br/>
+<span class="comment">(Look into your blood report in the lipids section. it is ussually numeric for eg. 64)</span>
+<br/><input type="number" placeholder="" id="pcvt"/><br/>
+White Blood Cell Count:<br/>
+<span class="comment">(The White blood cell count in cells/cumm for eg. 7800)</span>
+<br/><input type="number" placeholder="" id="wct"/><br/>
+Red Blood Cell Count:<br/>
+<span class="comment">(The red blood cell count in millions/cmm. for eg. 3.4)</span>
+<br/><input type="number" placeholder="" id="rct"/><br/>
+Hypertension:
+<br/><select class="select"  id="htnt">
+    <option class="htn" value="">--Select--</option>
+    <option class="htnyes" value="yes">Yes</option>
+    <option class="htnno" value="no">No</option>
+</select>
+<br/><br/>
 </form>
-<button id="cls_btn" onclick="javascript:loadsEx()">PREDICT</button>
 
+<button id="cls_btn" onclick="javascript:loadsEx()">PREDICT</button>
 <br/><br/>
 
 <iframe id="iframe" width=100% style="max-width:500px" height=50px src="https://ayund18.gisksk.isaso" /></iframe>
