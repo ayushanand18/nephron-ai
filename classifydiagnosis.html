@@ -93,13 +93,14 @@ Hypertension:
 
 <button id="cls_btn" onclick="javascript:loadsEx()">PREDICT</button>
 <br/><br/>
+<div id="result">Results will appear here</div>
 
-<iframe id="iframe" width=100% style="max-width:500px" height=50px src="https://ayund18.gisksk.isaso" /></iframe>
+<br/><br/>
+<span class="comment">This is a Machine Learning Classification. Therefore, results might be inaccurate. We don't certify 100% authenticity.</span>
 </div>
     <script>
 
-    var ifrae=document.getElementById("iframe");
-    ifrae.style.border="none";
+
     function loadsEx(){
         var sgt=document.getElementById("sgt").value;
         var alt=document.getElementById("alt").value;
@@ -110,11 +111,26 @@ Hypertension:
         var rct=document.getElementById("rct").value;
         var htnt=document.getElementById("htnt").value;
 
-            var newurl="https://now-express.intru-innovation.now.sh/clsazure"+"?sg="+sgt+"&al=" +alt+"&sc="+sct+"&hemo="+hemot+"&pcv="+pcvt+"&wc="+wct+"&rc="+rct+"&htn="+htnt;
-        ifrae.setAttribute("src",newurl);
-        alert('In the Response, "ckd" means Chronic Kidney Disease Probability and "notckd" meand no probability for the disease');
-    };
+        var newurl="https://now-express.intru-innovation.now.sh/clsazure"+"?sg="+sgt+"&al=" +alt+"&sc="+sct+"&hemo="+hemot+"&pcv="+pcvt+"&wc="+wct+"&rc="+rct+"&htn="+htnt;
 
+        var xhttp = new XMLHttpRequest();
+        var resdiv=document.getElementById("result");
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        if (this.responseText.includes("notckd")){
+            document.getElementById("result").innerHTML =
+        "<br/>Congrats, You are SAFE! <br/> Based on the data you provided our AI Systems could <b>not find a possibility for Chronic Kidney Disease</b><br/>";
+        }
+        else{
+            resdiv.innerHTML="<br/>You are in DANGER ! <br/> Based on the data you provided our AI Systems did figure out a <b>possibility of Chronic Kidney Disease</b>. Please go and see out a specialised physician!"
+        }
+        }
+        }
+        xhttp.open("GET", newurl, true);
+        xhttp.send();
+
+
+     };
 
 </script>
 </body>
