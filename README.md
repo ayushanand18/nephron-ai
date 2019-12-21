@@ -5,5 +5,6 @@ Nephron AI is the child project of NightLight AI by Ayush Anand. This is a Machi
 
 Thank You <br/>
 With &hearts; from <b>Ayush Anand</b><br/>
-<i>Founder NightLight AI</i><br/>
+Team NephronAI
+<i>From NightLight AI</i><br/>
 &copy; 2019
