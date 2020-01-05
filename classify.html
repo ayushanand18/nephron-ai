@@ -1,145 +1,211 @@
 <!DOCTYPE html>
-<html>
-    <meta charset="utf-8" name="vieport" content="width=device-width,initial-scale=1,user-scalable=1"/>
+<html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129803213-2" defer></script>
-    <script defer>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-129803213-2');
-    </script>
-    <title>NephronAI -Classify Chronic Kidney Disease</title>
-    <style>
-        body{
-            background-color:white;
-            color:blackwhite;
-            font-family:'Poppins' , sans-serif;
-            font-size:16px;
-        }
-        button{
-            border:1px solid black;
-            color:black;
-            padding: 8px;
-            background-color: white;
-            transition: all 0.6s ease;
-            font-family:'Poppins' , sans-serif;
-        }
-        button:hover{
-            color:white;
-            background-color:black;
-            cursor:pointer;
-        }
-        .content{
-            padding-left:20px !important;
-        }
-        .content input[type=text], .content input[type=number]{
-            border:none;
-            width:300px;
-            margin-bottom:5px;
-;           border-bottom: 1px solid black;
-            padding-left:8px;
-            font-family:'Poppins',sans-serif;
-            font-size:14px;
-        }
-        .content a{
-            text-decoration: underline;
-            color:black;
-        }
-        .content .comment{
-            font-size:12px;
-        }
-        @media screen and (min-width:720px){
-            .content{
-                margin-left:20%;
-                width:60%;
-                font-size:18px;
-            }
-        }
-    </style>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classify Chronic Kidney Disease</title>
+<meta name="description" content="NephronAI - an AI project by NightLight AI that aims to uses AI to counter Chronic Kidney Disease.">
+<meta name="keywords" content="NephronAI, chronic kidney disease, nightlight ai">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+<link rel="stylesheet" href="css/styles-merged.css">
+<link rel="stylesheet" href="css/classify.min.css">
+<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="content">
-<form id="forms">
-Specific Gravity:<br/>
-<span class="comment">(You need to get a medical test for this or you can skip it. it is numeric for eg. 1.02)</span>
-<br/><input type="number" placeholder="" id="sgt"/><br/>
-Albumin:
-<br/><span class="comment">(Select from this list)</span>
-<br/><select class="select" id="alt">
-    <option value="">--Select--</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-</select><br/>
-Serum Creatinine:<br/>
-<span class="comment">(The Serum creatinine in mg/dl for eg. 1.2)</span>
-<br/><input type="number" placeholder="" id="sct"/><br/>
-Heamoglobin:<br/>
-<span class="comment">(The pigment that gives blood its red color, in grams. for eg. 15.2)</span>
-<br/><input type="text" placeholder="" id="hemot"/><br/>
-Packed Cell Volume:<br/>
-<span class="comment">(Look into your blood report in the lipids section. it is ussually numeric for eg. 64)</span>
-<br/><input type="number" placeholder="" id="pcvt"/><br/>
-White Blood Cell Count:<br/>
-<span class="comment">(The White blood cell count in cells/cumm for eg. 7800)</span>
-<br/><input type="number" placeholder="" id="wct"/><br/>
-Red Blood Cell Count:<br/>
-<span class="comment">(The red blood cell count in millions/cmm. for eg. 3.4)</span>
-<br/><input type="number" placeholder="" id="rct"/><br/>
-Hypertension:
-<br/><select class="select"  id="htnt">
-    <option class="htn" value="">--Select--</option>
-    <option class="htnyes" value="yes">Yes</option>
-    <option class="htnno" value="no">No</option>
-</select>
-<br/><br/>
-</form>
 
-<button id="cls_btn" onclick="javascript:loadsEx()">PREDICT</button>
-<br/><br/>
-<div id="result">Results will appear here</div>
+<header role="banner" class="probootstrap-header">
+<div class="container-fluid">
+<a href="index" class="probootstrap-logo">Nephron<span>AI</span></a>
+<a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
+<div class="mobile-menu-overlay"></div>
+<nav role="navigation" class="probootstrap-nav hidden-xs">
+<ul class="probootstrap-main-nav">
+<li><a href="index">Home</a></li>
+<li><a href="contribute">Contribute</a></li>
+<li><a href="about">About</a></li>
+<li><a href="https://ayushanand18.github.io/">NightLight AI</a></li>
+</ul>
+<div class="extra-text visible-xs">
+<a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+<h5>Social</h5>
+<ul class="social-buttons">
+<li><a href="https://twitter.com/theayushanand"><i class="icon-twitter"></i></a></li>
+<li><a href="#"><i class="icon-facebook"></i></a></li>
+<li><a href="#"><i class="icon-instagram2"></i></a></li>
+</ul>
+<p><small>&copy; Copyright 2019 NightLight AI. All Rights Reserved.</small></p>
+</div>
+</nav>
+</div>
+</header>
+
+
+<section class="probootstrap-intro" style="" data-stellar-background-ratio="0.5">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-7 probootstrap-intro-text">
+<h1 class="probootstrap-animate">Step #1: Predict the Disease</h1>
+<div class="probootstrap-subtitle probootstrap-animate">
+<h2>Are you ready? Fill the form below to know whether you have Chronic Kidney Disease or not.</h2>
+</div>
+<p class="watch-intro probootstrap-animate"><span style="max-width:380px;" class="btn btn-primary open-modal">Try it now</span></p><br>
+</div>
+</div>
+</div>
+</section>
+
+<div class="form-container">
+<form id="forms classify-form">
+    <!-- Form fields with Information to gather user input -->
+    <div class="qone">
+        <h4>Specific Gravity:</h4>
+        <p>You need to get a medical test for this or you can skip it. It is <i>numeric</i></p>
+        <input type="number" placeholder="" id="sgt"/><br/>
+        <button class="btn btn-primary next">Next</button>
+        <div class="details">
+            <a href="javascript:void(0)" class="show-details">What is Specific Gravity?</a>
+            <p class="information">Specific Gravty refers to this</p>
+        </div>
+    </div>
+
+    <div class="qtwo">
+        <h4>Albumin</h4>
+        <p>Select from this list</p>
+        <br/><select class="select" id="alt">
+        <option value="">--Select--</option>
+        <option value="1">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        </select><br/>
+        <span class="btn btn-primary next">Next</span>
+    </div>
+
+    <div class="qthree">
+        <h4>Serum Creatinine</h4>
+        <p>The Serum creatinine in <i>mg/dl</i><br/>
+        For example 1.2</p>
+        <br/><input type="number" placeholder="" id="sct"/><br/>
+        <span class="btn btn-primary next">Next</span>
+    </div>
+    <div class="qfour">
+        <h4>Heamoglobin</h4>
+        <p>The pigment that gives blood its red color, in <i>grams</i>. For example, 15.2</p>
+        <br/><input type="text" placeholder="" id="hemot"/><br/>
+        <span class="btn btn-primary next">Next</span>
+    </div>
+    <div class="qfive">
+        <h4>Packed Cell Volume</h4>
+        <p>Look into your blood report in the lipids section. it is ussually <i>numeric</i>. For example, 64 </p>
+        <br/><input type="number" placeholder="" id="pcvt"/><br/>
+        <span class="btn btn-primary next">Next</span>
+    </div>
+    <div class="qsix">
+        <h4>White Blood Cell Count</h4>
+        <p>The White blood cell count in <i>cells/cumm</i>. For example, 7800</p>
+        <br/><input type="number" placeholder="" id="wct"/><br/>
+        <span class="btn btn-primary next">Next</span>
+    </div>
+    <div class="qseven">
+        <h4>Red Blood Cell Count</h4>
+        <p>The red blood cell count in <i>millions/cmm</i>. For example, 3.4</p>
+        <br/><input type="number" placeholder="" id="rct"/><br/>
+        <span class="btn btn-primary next">Next</span>
+    </div>
+    <div class="qeight">
+        <h4>Hypertension</h4>
+        <br/><select class="select"  id="htnt">
+            <option class="htn" value="">--Select--</option>
+            <option class="htnyes" value="yes">Yes</option>
+            <option class="htnno" value="no">No</option>
+        </select>
+        <button class="btn btn-primary finish">Finish</button>
+    </div>
+    <div class="result">
+    </div>
+</form>
+</div>
+
 
 <br/><br/>
 <span class="comment">This is a Machine Learning Classification. Therefore, results might be inaccurate. We don't certify 100% authenticity.</span>
 </div>
-    <script>
+
+<section class="probootstrap-section probootstrap-section-dark">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 section-heading mb50 text-center probootstrap-animate">
+<h2>Know About the Creator</h2>
+<p class="lead">Ahh! I'm sorry if i forgot to tell you about my creator. He's Ayush Anand.<br/><a href="https://ayushanand18.github.io/about-me">Know more about him</a></p>
+</div>
+</div>
+</div>
+</section>
 
 
-    function loadsEx(){
-        var sgt=document.getElementById("sgt").value;
-        var alt=document.getElementById("alt").value;
-        var sct=document.getElementById("sct").value;
-        var hemot=document.getElementById("hemot").value;
-        var pcvt=document.getElementById("pcvt").value;
-        var wct=document.getElementById("wct").value;
-        var rct=document.getElementById("rct").value;
-        var htnt=document.getElementById("htnt").value;
+<footer role="contentinfo" class="probootstrap-footer">
+<div class="container">
+<div class="row">
 
-        var newurl="https://now-express.intru-innovation.now.sh/clsazure"+"?sg="+sgt+"&al=" +alt+"&sc="+sct+"&hemo="+hemot+"&pcv="+pcvt+"&wc="+wct+"&rc="+rct+"&htn="+htnt;
+<div class="col-md-4">
+<div class="probootstrap-footer-widget">
+<h3>About NephronAI</h3>
+<p>Nephron AI is the child project of NightLight AI by Ayush Anand. This is a Machine Learning powered toll for diagnosis and analysis of causes for Chronic Kidney Disease with 100% accuracy.</p>
+<p><a href="about" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+</div>
+</div>
 
-        var xhttp = new XMLHttpRequest();
-        var resdiv=document.getElementById("result");
-        xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-        if (this.responseText.includes("notckd")){
-            document.getElementById("result").innerHTML =
-        "<br/>Congrats, You are SAFE! <br/> Based on the data you provided our AI Systems could <b>not find a possibility for Chronic Kidney Disease</b><br/>";
-        }
-        else{
-            resdiv.innerHTML="<br/>You are in DANGER ! <br/> Based on the data you provided our AI Systems did figure out a <b>possibility of Chronic Kidney Disease</b>. Please go and see out a specialised physician!"
-        }
-        }
-        }
-        xhttp.open("GET", newurl, true);
-        xhttp.send();
+<div class="col-md-4">
+<div class="probootstrap-footer-widget">
+<h3>Important Links</h3>
+<ul class="probootstrap-footer-widget">
+<li><a href="/">Home (NightLight AI)</a></li>
+<li><a href="/privacy">Privacy</a></li>
+<li><a href="/terms">Terms</a></li>
+</ul>
+</div>
+</div>
 
+<div class="col-md-4">
+<div class="probootstrap-footer-widget">
+<h3>Connect With Us</h3>
+<ul class="probootstrap-footer-social">
+<li><a href="https://twitter.com/theayushanand"><i class="icon-twitter"></i></a></li>
+<li><a href=""><i class="icon-facebook"></i></a></li>
+<li><a href=""><i class="icon-instagram2"></i></a></li>
+</ul>
+</div>
+</div>
 
-     };
+</div>
+</div>
+<div class="">
+<div class="text-center">
+<p>
+<small>&copy; 2019 <a href="https://ayushanand18.github.io/" target="_blank">NightLight AI</a>. All Rights Reserved. </small><br>
+<a href="#" class="js-backtotop">Back to top</a>
+</p>
+</div>
+</div>
+</footer>
 
+<script src="js/scripts.min.js" type="ef720126cb2c08d7b1817c75-text/javascript"></script>
+<script src="js/main.min.js" type="ef720126cb2c08d7b1817c75-text/javascript"></script>
+<script src="js/custom.js" type="ef720126cb2c08d7b1817c75-text/javascript"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="ef720126cb2c08d7b1817c75-|49" defer=""></script></body>
+<script src="js/jquery.min.js" ></script>
+<!-- Load Script for Disease Prediction Function -->
+<script src="js/predict.min.js"></script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-129803213-2" defer></script>
+<script defer>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129803213-2');
 </script>
-</body>
 </html>
