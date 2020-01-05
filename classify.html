@@ -51,6 +51,7 @@
 <h2>Are you ready? Fill the form below to know whether you have Chronic Kidney Disease or not.</h2>
 </div>
 <p class="watch-intro probootstrap-animate"><span style="max-width:380px;" class="btn btn-primary open-modal">Try it now</span></p><br>
+<span >This is a Machine Learning Classification. Therefore, results might be inaccurate. We don't certify 100% authenticity.</span>
 </div>
 </div>
 </div>
@@ -62,11 +63,11 @@
     <div class="qone">
         <h4>Specific Gravity:</h4>
         <p>You need to get a medical test for this or you can skip it. It is <i>numeric</i></p>
-        <input type="number" placeholder="" id="sgt"/><br/>
+        <input type="number" placeholder="" id="sgt"/><br/><br/>
         <button class="btn btn-primary next">Next</button>
-        <div class="details">
+        <div class="details"><br/>
             <a href="javascript:void(0)" class="show-details">What is Specific Gravity?</a>
-            <p class="information">Specific Gravty refers to this</p>
+            <p class="information">Specific Gravty refers to the ratio of the density of a substance to the density of a standard, usually water for a liquid or solid, and air for a gas. It is also measured for Human Body.</p>
         </div>
     </div>
 
@@ -81,40 +82,64 @@
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
-        </select><br/>
+        </select><br/><br/>
         <span class="btn btn-primary next">Next</span>
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What is Albumin?</a>
+            <p class="information">Albumin is a protein made by your liver which helps keep fluid in your bloodstream so it doesn't leak into other tissues. It is also carries various substances throughout your body, including hormones, vitamins, and enzymes.</p>
+        </div>
     </div>
 
     <div class="qthree">
         <h4>Serum Creatinine</h4>
         <p>The Serum creatinine in <i>mg/dl</i><br/>
-        For example 1.2</p>
-        <br/><input type="number" placeholder="" id="sct"/><br/>
+        For example 1.2</p><br/>
+        <input type="number" placeholder="" id="sct"/><br/><br/>
         <span class="btn btn-primary next">Next</span>
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What is Serum Creatinine?</a>
+            <p class="information">A serum creatinine test measures the level of creatinine in your blood and provides an estimate of how well your kidneys filter (glomerular filtration rate).</p>
+        </div>
     </div>
     <div class="qfour">
         <h4>Heamoglobin</h4>
         <p>The pigment that gives blood its red color, in <i>grams</i>. For example, 15.2</p>
-        <br/><input type="text" placeholder="" id="hemot"/><br/>
+        <br/><input type="text" placeholder="" id="hemot"/><br/><br/>
         <span class="btn btn-primary next">Next</span>
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What is Heamoglobin?</a>
+            <p class="information">Haemoglobin is a red protein responsible for transporting oxygen in the blood of vertebrates. Its molecule comprises four subunits, each containing an iron atom bound to a haem group.</p>
+        </div>
     </div>
     <div class="qfive">
         <h4>Packed Cell Volume</h4>
         <p>Look into your blood report in the lipids section. it is ussually <i>numeric</i>. For example, 64 </p>
-        <br/><input type="number" placeholder="" id="pcvt"/><br/>
+        <br/><input type="number" placeholder="" id="pcvt"/><br/><br/>
         <span class="btn btn-primary next">Next</span>
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What is Packed Cell Volume?</a>
+            <p class="information">The packed cell volume (PCV) is a measurement of the proportion of blood that is made up of cells. The value is expressed as a percentage or fraction of cells in blood. For example, a PCV of 40% means that there are 40 millilitres of cells in 100 millilitres of blood.</p>
+        </div>
     </div>
     <div class="qsix">
         <h4>White Blood Cell Count</h4>
         <p>The White blood cell count in <i>cells/cumm</i>. For example, 7800</p>
-        <br/><input type="number" placeholder="" id="wct"/><br/>
+        <br/><input type="number" placeholder="" id="wct"/><br/><br/>
         <span class="btn btn-primary next">Next</span>
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What are White Blood Cells?</a>
+            <p class="information">White blood cells (WBCs), also called leukocytes or leucocytes, are the cells of the immune system that are involved in protecting the body against both infectious disease and foreign invaders.</p>
+        </div>
     </div>
     <div class="qseven">
         <h4>Red Blood Cell Count</h4>
         <p>The red blood cell count in <i>millions/cmm</i>. For example, 3.4</p>
-        <br/><input type="number" placeholder="" id="rct"/><br/>
+        <br/><input type="number" placeholder="" id="rct"/><br/><br/>
         <span class="btn btn-primary next">Next</span>
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What are Red Blood Cells?</a>
+            <p class="information">Red blood cells are the blood cells that carry oxygen. Red cells contain hemoglobin and it is the hemoglobin which permits them to transport oxygen (and carbon dioxide). </p>
+        </div>
     </div>
     <div class="qeight">
         <h4>Hypertension</h4>
@@ -122,17 +147,17 @@
             <option class="htn" value="">--Select--</option>
             <option class="htnyes" value="yes">Yes</option>
             <option class="htnno" value="no">No</option>
-        </select>
-        <button class="btn btn-primary finish">Finish</button>
+        </select><br/><br/>
+        <button style="width:200px;" class="btn btn-primary finish">Finish</button>
+        <div class="details"><br/>
+            <a href="javascript:void(0)" class="show-details">What is Hypertension?</a>
+            <p class="information">Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms.</p>
+        </div>
     </div>
-    <div class="result">
+    <div class="result">Loading your Results...<br/> Please Wait.
     </div>
 </form>
 </div>
-
-
-<br/><br/>
-<span class="comment">This is a Machine Learning Classification. Therefore, results might be inaccurate. We don't certify 100% authenticity.</span>
 </div>
 
 <section class="probootstrap-section probootstrap-section-dark">
