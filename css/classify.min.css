@@ -1,7 +1,7 @@
 .form-container{
     display:none;
     position:fixed;
-    z-index:3;
+    z-index:6;
     width:90%;
     height:80%;
     background-color:white;
@@ -10,6 +10,30 @@
     box-shadow: 0px 0px 13px -2px #000000;
     border-radius: 2px;
 }
+.openmodal{
+    width:60% !important;
+    color:#f54ea2 !important;
+    background:white !important;
+    padding:15px !important;
+    border:2px solid white !important;
+    max-width:420px !important;
+    transition: all 0.3s ease !important;
+}
+.openmodal:hover {
+    background:transparent !important;
+    color: white !important;
+}
+.pseudo-div{
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    background: white;
+    opacity:0.4;
+    margin:none;
+    z-index:5 !important;
+}
 @media screen and (min-width:720px){
     .form-container{
         top:10%;
@@ -17,4 +41,11 @@
         max-height:900px;
         max-width:500px;
     }
+}
+header{
+    z-index:4 !important;
+}
+.info{
+    color: white;
+    background: black;
 }
