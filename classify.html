@@ -223,7 +223,31 @@
 <script src="js/custom.js" type="ef720126cb2c08d7b1817c75-text/javascript"></script>
 <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="ef720126cb2c08d7b1817c75-|49" defer=""></script></body>
 <script src="js/jquery.min.js" ></script>
+<!--Loading Firebase and its binaries-->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBatfxmiZStN0MSyIvBlqaGj8ixAtXSkfc",
+    authDomain: "nephron-ai.firebaseapp.com",
+    databaseURL: "https://nephron-ai.firebaseio.com",
+    projectId: "nephron-ai",
+    storageBucket: "nephron-ai.appspot.com",
+    messagingSenderId: "53854256710",
+    appId: "1:53854256710:web:2dba01c916cfb536711447",
+    measurementId: "G-S3ZE21NK3G"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  var db = firebase.firestore();
+</script>
 <!-- Load Script for Disease Prediction Function -->
+
 <script src="js/predict.min.js"></script>
 <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-129803213-2" defer></script>
 <script defer>
