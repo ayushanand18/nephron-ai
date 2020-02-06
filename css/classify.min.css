@@ -15,9 +15,8 @@
 .causecontainer .question{
     color:black !important;
 }
-.causecontainer form input[type="radio"]::before{
-    content:"\A" !important;
-    white-space: pre !important;
+.causecontainer form{
+    white-space: pre-line !important;
     color:black;
 }
 .openmodal{
