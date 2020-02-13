@@ -58,3 +58,21 @@ header{
     color: white;
     background: black;
 }
+::-ms-scrollbar{
+    display:none !important;
+}
+
+.qone::-webkit-scrollbar, .qtwo::-webkit-scrollbar, .qthree::-webkit-scrollbar, .qfour::-webkit-scrollbar, .qfive::-webkit-scrollbar, .qsix::-webkit-scrollbar, .qseven::-webkit-scrollbar, .qeight::-webkit-scrollbar { 
+    display: none !important; 
+}
+.qone, .qtwo, .qthree, .qfour, .qfive, .qsix, .qseven, .qeight, .others, .result, .q1, .q2, .q3, .q4, .q5, .q6, .q7, .q8, .q9, .q10, .q11, .q12, .q13, .q14, .q15, .q15, .q16, .q17, .q18, .q19, .q20, .q21, .q22, .q23, .q24{
+    overflow-y:scroll;
+    height:400px !important;
+}
+.causelink{
+    position:relative;
+    right:-180px;
+    border-radius:0px;
+    padding-bottom:15px;
+    padding-top: 15px;
+}
