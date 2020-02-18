@@ -61,6 +61,9 @@ header{
     color: white;
     background: black;
 }
+::-webkit-scrollbar{
+    display:none !important;
+}
 ::-ms-scrollbar{
     display:none !important;
 }
