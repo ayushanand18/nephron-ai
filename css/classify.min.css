@@ -82,3 +82,9 @@ header{
     padding-bottom:15px;
     padding-top: 15px;
 }
+div.lead button{
+   width:130px;     
+   padding-left:12px !important;
+   text-align:left;
+   font-size:16px;
+}
