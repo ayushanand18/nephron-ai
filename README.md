@@ -16,7 +16,7 @@ The Service can be accessed online through any device using a web browser. [Chec
 
 ----
 ### References
-References have been taken through various resources of the internet which are listed below. We thank all the resource owners, we don't claim their ownership nor authenticity.
+References have been taken through various resources from the internet which are listed below. We thank all the resource owners, we don't claim their ownership nor authenticity.
 
 [Rajesh Misir, Malay Mitra, and Ranjit Kumar Samanta, 2017 June 19](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5497482/)
 
@@ -44,6 +44,7 @@ References have been taken through various resources of the internet which are l
 
 [Data for the Machine Learning project](http://archive.ics.uci.edu/ml)
 
+Dataset Attribution:
 ``@misc{Dua:2019 ,
 author = "Dua, Dheeru and Graff, Casey",
 year = "2017",

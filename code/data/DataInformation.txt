@@ -79,3 +79,13 @@ htn hypertension		no unit (yes/no)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5497482/,Rajesh Misir, Malay Mitra, and Ranjit Kumar Samanta, 2017 June 19]
 [https://bmcnephrol.biomedcentral.com/articles/10.1186/1471-2369-14-114,Ajay K Singh Youssef MK Farag and Mohan M Rajapurkar, 2013 May 28]
+[https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/causes]
+[https://rarediseases.info.nih.gov/diseases/6577/heavy-metal-poisoning]
+[https://www.webmd.com/hypertension-high-blood-pressure/guide/hypertension-symptoms-high-blood-pressure]
+[https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes]
+[https://www.webmd.com/a-to-z-guides/what-is-heavy-metal-poisoning#1]
+[https://www.webmd.com/diabetes/tips-diabetes-lifestyle#1]
+[https://www.healthline.com/nutrition/15-ways-to-lower-blood-sugar#section15]
+[https://www.healthline.com/health/high-blood-pressure-hypertension/lower-it-fast#8]
+[https://www.healthline.com/health/heavy-metal-poisoning]
+[https://www.healthline.com/health/kidney-health/how-to-prevent-kidney-failure#11-tips]
