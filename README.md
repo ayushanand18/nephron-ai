@@ -6,7 +6,7 @@
 
 ----
 ### Introduction
-NephronAI is the child project of [NightLight AI](https://ayushanand18.github.io) by Ayush Anand.
+NephronAI is a project by [Ayush Anand](https://ayushanand18.github.io).
 This is a Machine Learning powered web-based tool for diagnosis and analysis of causes for Chronic Kidney Disease with about 99.9%* accuracy.
 
 
@@ -57,7 +57,6 @@ institution = "University of California, Irvine, School of Information and Compu
 We Thank Everybody whose even indirect contribution has helped this project, <br/>
 With &hearts; from <b>Ayush Anand</b><br/>
 Team <u>NephronAI</u><br/>
-<i>From NightLight AI</i>
 &copy; 2020
 ----
 
