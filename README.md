@@ -91,7 +91,7 @@ The following steps must be used to contribute
 The commit message must have three parts,
 Feat: *The title of the commit (what are you going to change)*
 Desc: *Detail the changes you have brought*
-Footer: *Provide references to the issue*
+Info: *Provide references to the issue*
 ````
 + Start a pull request
 
