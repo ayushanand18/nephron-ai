@@ -114,6 +114,7 @@ I would wish to pursue further research on the project with the following object
 ## Acknowledgements
 I would like to show my gratitude to the anonymous reviewers for sharing their pearls of wisdom with us during the course of documenting this research, and I thank my 3 friends for their insights in order to improve user experience with the project interface.
 
+We are accepting reviews and open-source contributions for the project. We'll be glad to hear your feedback.
 
 ## Contribute to the Project
 If you would like to contribute to this open project, it would be really great. You could help the world in fighting chronic kidney disease plus your name will be featured here.
