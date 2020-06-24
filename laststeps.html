@@ -89,7 +89,7 @@
             <h3>	Increase activity and exercise more	</h3><p>	As you regularly increase your heart and breathing rates, over time your heart gets stronger and pumps with less effort. This puts less pressure on your arteries and lowers your blood pressure. Just do it regularly and work up to at least half an hour per day of moderate activity.	</p>
             <h3>	Lose weight if you’re overweight	</h3><p>	If you’re overweight, losing even 5 to 10 pounds can reduce your blood pressure. Plus, you’ll lower your risk for other medical problems.	</p>
             <h3>	Cut back on sugar and refined carbohydrates	</h3><p>	Many scientific studies show that restricting sugar and refined carbohydrates can help you lose weight and lower your blood pressure. Refined Carbphydrates include white bread, pizza dough, pasta, pastries, white flour, white rice, sweet desserts, etc.	</p>
-            <h3>	Stop smoking	</h3><p>	Stopping smoking is good for your all-around health. Smoking causes an immediate but temporary increase in your blood pressure and an increase in your heart rate	</p>
+            <h3>	Stop smoking	</h3><p>	Stopping smoking is good for your all-around health. Smoking causes an immediate but temporary increase in your blood pressure and an increase in your heart rate.	</p>
             <h3>	Try meditation or yoga	</h3><p>	Mindfulness and meditation, including transcendental meditation, have long been used — and studied — as methods to reduce stress. Yoga, which commonly involves breathing control, posture, and meditation techniques, can also be effective in reducing stress and blood pressure.	</p>
             <h3>	Eat some dark chocolate	</h3><p>	Yes, chocolate lovers: Dark chocolate has been shown to lower blood pressure. But the dark chocolate should be 60 to 70 percent cacao. The benefits are thought to come from the flavonoids present in chocolate with more cocoa solids. The flavonoids help dilate, or widen, your blood vessels.	</p>
             <h3>	Make sure to get good, restful sleep	</h3><p>	Your blood pressure typically dips down when you’re sleeping. If you don’t sleep well, it can affect your blood pressure. People who experience sleep deprivation, especially those who are middle-aged, have an increased risk of high blood pressure.	</p>
@@ -120,6 +120,19 @@
             <h3>	For severe cases	</h3><p>	For more severe cases, the standard treatment is chelation therapy. This involves giving medication, either through a pill or injection, that binds to the heavy metals in your body. As they bind to the metals, chelators help to usher them out of your body as waste.	</p>
             <h3>	Please see a doctor immediately. Your doctor can give you more specific recommendations on how to reduce your exposure.	</h3><p>		</p>
             <h3>	Also, watch-out for 'detox' techniques on the internet. While these might seem like a safer, less expensive alternative to seeing a doctor, they aren’t approved by the U.S. Food and Drug Administration. And most of them haven’t been evaluated for safety or effectiveness.	</h3><p>		</p>
+        </div>
+    </div>
+    </div>
+    <div class="iga container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 section-heading mb50 text-center probootstrap-animate">
+            <h3>    How does IgA glomerulonephritis cause Chronic Kidney Disease?</h3><p>  Glomerulonephritis is a group of diseases that injure the part of the kidney that filters blood (called glomeruli). GN can lead to nephrotic syndrome, which will eventually lead to end-stage renal disease if it doesn’t come under control.</p>
+            <h3>	Maintain a healthy weight.	</h3><p>	It's a no-brainer that maintaining a healthy weight will improve your health and prevent future health problems. Weight control also promotes healthy blood sugar levels and has been shown to be essential to keeping the ammount of nutrients in body balanaced. Obesity and high protein in bloods have been shown to put pressure on your kidneys.	</p>
+            <h3>    Restrict protein in your diet.	</h3><p>	Just eliminating extra protein but don't cut on the essentials. Cosnult your dietician or family doctor to get assitance on how much should you consume in a day.	</p>
+            <h3>	Restrict salt in your diet.	</h3><p>	Eating too much salt is associated with numerous diseases like high blood pressure (which is a possible source for many diseases) and subsequently kidney disease. </p>
+            <h3>    Quit smoking.	</h3><p>	Stopping smoking is good for your all-around health. Smoking causes an immediate but temporary increase in your blood pressure and an increase in your heart rate.	</p>
+            <h3>	Please see a doctor immediately. Your doctor can give you more specific recommendations on how to imrpove your conditions.	</h3><p>		</p>
+           
         </div>
     </div>
     </div>
@@ -239,6 +252,7 @@ If you'd like our services why not spread the word.<br><br>
     $(".highbp").hide();
     $(".genetics").hide();
     $(".metal").hide();
+    $(".iga").hide();
     $(".others").hide();
     
     var url=window.location.href;
@@ -259,6 +273,9 @@ If you'd like our services why not spread the word.<br><br>
     }
     else if(cause=="Heavy Metal Poisoning"){
         $(".metal").show();
+    }
+    else if(cause=="glomerulonephritis"){
+        $(".iga").show()
     }
     else{
         $(".others").show();
