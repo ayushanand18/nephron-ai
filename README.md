@@ -181,10 +181,8 @@ institution = "University of California, Irvine, School of Information and Compu
 <br><br><br>
 We thank everybody whose even indirect contribution has helped this project, <br>
 With &hearts; from <br>
-**Ayush Anand**<br>
-`Team NephronAI`</u><br>
-`&copy; 2020`
-
+**Ayush Anand** <br>
+`&copy; 2022`
 ----
 
 PS. To contact the repository owner or to get more information on how to contribute, please write [us here](https://ayushanand18.github.io/nephron-ai/contribute)
