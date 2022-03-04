@@ -18,7 +18,7 @@
 - [External References](#References)
 
 
-
+No special installation required, either go to [Live Demo](#Links) or download the ZIP und unzip in your local directory, and then open `index.html`
 ## Abstract
 The kidneys are complex and resilient organs, each roughly the size of a fist. But many medical conditions can strain the kidneys, including diabetes, and high blood pressure causing chronic kidney disease. Chronic Kidney Disease is a major public health problem that affects 1.6 billion people globally each year. Around 10% of world population suffers from the disease and can cause complications including kidney failures, an increased risk of heart disease, high blood pressure, bone disease, and anemia. Chronic Kidney disease is a five-stage disease, often has no symptoms in its early stages and can go undetected until it is very advanced (For this reason, Chronic Kidney Disease is also referred to as a “silent disease”). Kidney disease causes gradual loss of kidney function over a period of months to years.
 Each year, chronic kidney disease kills more people than breast or prostate cancer. And patient awareness is less than 10% in stages 1 to 3. Unfortunately, there has not been much research done on fighting the disease and there is an apparent lack of seriousness among public health officials against this silent healthcare crisis.
@@ -171,18 +171,19 @@ References have been taken through various resources from the internet which are
 
 Dataset Attribution:
 ```
-@misc{Dua:2019 ,
+@misc{Dua:2022 ,
 author = "Dua, Dheeru and Graff, Casey",
 year = "2017",
 title = "{UCI} Machine Learning Repository",
 url = "http://archive.ics.uci.edu/ml",
 institution = "University of California, Irvine, School of Information and Computer Sciences" }
 ```
-<br><br><br>
-We thank everybody whose even indirect contribution has helped this project, <br>
-With &hearts; from <br>
-**Ayush Anand** <br>
-`&copy; 2022`
+<br/><br/><br/>
+We thank everybody whose even indirect contribution has helped this project, <br/>
+With &hearts; from <br/>
+**Ayush Anand** <br/>
+&copy; ``2022``
+
 ----
 
 PS. To contact the repository owner or to get more information on how to contribute, please write [us here](https://ayushanand18.github.io/nephron-ai/contribute)

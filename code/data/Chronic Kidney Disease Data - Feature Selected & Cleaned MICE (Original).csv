@@ -1,4 +1,4 @@
-classification,hemo,sc,pcv,al,rc,htn,sg,dm,sod
+classification,hemo,sc,pcv,al,rc,htn,sg,dm, sod
 ckd,15.4,1.2,44,1,5.2,yes,1.02,yes,146.657867431641
 ckd,11.3,0.8,38,4,4.68692111968994,no,1.02,no,151.38525390625
 ckd,9.6,1.8,31,2,4.11464357376099,no,1.01,yes,130.7255859375
